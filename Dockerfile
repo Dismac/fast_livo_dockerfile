@@ -26,7 +26,7 @@ RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; cd /ws_livox; catkin_make'
     
 RUN cd /root/catkin_ws/src/ && \
     git clone https://github.com/Dismac/rpg_vikit.git && \
-    git clone https://github.com/hku-mars/FAST-LIVO && \
+    git clone https://github.com/Dismac/FAST-LIVO.git && \
     cd ../
 RUN /bin/bash -c '. /ws_livox/devel/setup.bash; cd /root/catkin_ws; catkin_make'
 CMD ["bash"]
